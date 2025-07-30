@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Media Page - About Me</title>
+  </head>
+  <body>
+    <h1>Media Page - Telling My Story</h1>
+
+    <h2>1. Responsive Image</h2>
+    <picture>
+      <source media="(min-width: 1024px)" src="../images/aaron-laptop.jpg" />
+      <source media="(min-width: 768px)" src="../images/aaron-tablet.jpg" />
+      <source media="(max-width: 767px)" src="../images/aaron-mobile.jpeg" />
+      <img src="../images/aaron-default.jpeg" alt="Aaron working on a laptop" />
+    </picture>
+
+    <h2>2. Audio Message</h2>
+    <audio controls>
+      <source
+        src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+
+    <h2>3. Video Message</h2>
+    <video width="320" height="240" controls>
+      <source
+        src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4"
+        type="video/mp4"
+      />
+      Your browser does not support the video tag.
+    </video>
+
+    <h2>4. Embedded YouTube Video</h2>
+    <iframe
+      width="360"
+      height="215"
+      src="https://www.youtube.com/embed/Ke90Tje7VS0"
+      title="My Video Message"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+
+    <p><a href="index.html">Back to Profile</a></p>
+  </body>
+</html>
